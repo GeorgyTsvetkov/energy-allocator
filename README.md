@@ -177,24 +177,6 @@ apartments, as well as the value of any excess energy sold to the grid.
 
 ---
 
-## **Contributing**
-
-We welcome contributions to improve the system! To contribute:
-
-1. Fork this repository.
-2. Create a new branch (`git checkout -b feature-name`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature-name`).
-5. Open a pull request.
-
-Please ensure that your contributions adhere to the following guidelines:
-
-* Provide clear commit messages.
-* Include tests for any new features or bug fixes.
-* Follow the code style conventions used in the repository.
-
----
-
 ## **License**
 
 This project is licensed under the MIT License - see 
