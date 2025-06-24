@@ -90,7 +90,7 @@ pip install pandas numpy
 1. Clone this repository to local directory:
 
    ```
-   git clone https://github.com/GeorgyTsvetkov/Energy_Allocator.git
+   git clone https://github.com/GeorgyTsvetkov/energy-allocator.git
    ```
 
 2. Navigate to the project directory:
