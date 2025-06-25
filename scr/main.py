@@ -99,5 +99,3 @@ enerloc_df  = allocator.sma_value_sum()
 print(enerloc_df)
 with_energy_community   = enerloc_df.sum()
 print("Total value with energy community [€]:", with_energy_community/100)
-
-#enerloc_df.to_csv(os.path.join(os.path.relpath('test/result_csv'), 'test.csv'))

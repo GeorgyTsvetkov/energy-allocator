@@ -2,7 +2,7 @@ import pandas as pd
 import traceback
 import time
 import logging
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.WARNING)
 
 
 class AuxiliaryVar:

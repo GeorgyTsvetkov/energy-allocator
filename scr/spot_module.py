@@ -10,7 +10,7 @@ import traceback
 from auxiliary_module import AuxiliaryVar, AuxiliaryFunc
 import os
 import logging
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.WARNING)
 
 class SpotMedianCalculator:
     """
@@ -194,10 +194,12 @@ class SpotMedianCalculator:
                     dataframe   = dataframe[dataframe.index.year != dataframe.index.year.min()]
                 logging.info('Spot data got from CSV')
                 return dataframe
-            else:
+            elif not os.path.exists(filepath):
                 start       = f"{start_year}-01-01T00:00:00.000Z"
                 end         = f"{end_year}-12-31T23:00:00Z"
                 dataframe = from_api_to_dataframe(start, end)
+                os.mkdir(directory)
+                logging.info('Spot price data cache directory made.')
                 dataframe.to_csv(filepath)
                 first_year              = dataframe.index.year.min()
                 months_in_first_year    = dataframe.loc[dataframe.index.year == first_year].index.month.unique()

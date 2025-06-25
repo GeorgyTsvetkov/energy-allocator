@@ -7,7 +7,7 @@ import traceback
 from auxiliary_module import AuxiliaryVar, AuxiliaryFunc
 from spot_module import SpotMedianCalculator
 import logging
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.WARNING)
 
 class EnergyAllocator:
     """
